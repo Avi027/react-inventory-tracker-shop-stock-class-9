@@ -18,7 +18,9 @@ export default function Home() {
     { id: 1, name: "Laptop", price: 200, quantity: 5 },
     { id: 2, name: "Phone", price: 100, quantity: 15 },
     { id: 3, name: "Router", price: 500, quantity: 2 },
-    { id: 4, name: "Charger", price: 10, quantity: 20 },
+    { id: 4, name: "Charger", price: 90, quantity: 20 },
+    { id: 5, name: "Usb Cable", price: 120, quantity: 20 },
+    { id: 6, name: "Mouse", price: 100, quantity: 20 },
   ])
 
   const [newInventory, setNewInventory] = useState({
@@ -43,11 +45,11 @@ export default function Home() {
   }
 
   return (
-    <div className="">
+    <div className="text-center min-h-screen align-middle flex flex-col justify-center">
 
-      <h1 className="text-4xl">Inventory Tracker</h1>
+      <h1 className="text-4xl bg-amber-700 ">Inventory Tracker</h1>
 
-      <div className="text-2xl">Cash Box: {cashBox}</div>
+      <div className="text-2xl">Cash Box $: {cashBox}</div>
 
       <form
         onSubmit={(e: FormEvent<HTMLFormElement>) => {
